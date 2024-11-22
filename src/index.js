@@ -1,7 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './style.css';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import GlobalStyles from './styles/GlobalStyles';
+import { BrowserRouter } from 'react-router-dom';
 
-const App = () => <h1>Hello, Webpack React!</h1>;
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+    <App />
+    <GlobalStyles/>
+    </BrowserRouter>
+  </React.StrictMode>
+);
