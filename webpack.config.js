@@ -9,7 +9,7 @@ module.exports = {
     publicPath: './',
     clean: true,
   },
-  mode: 'development',
+  mode: 'production',
   devServer: {
     static: './dist',
     hot: true,
