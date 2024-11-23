@@ -6,10 +6,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Info.style';
 import { ImageThumb, InfoSection } from './Info.style';
-import img1 from '../../images/swiper/IMG_0823.jpeg';
-import img2 from '../../images/swiper/IMG_1045.jpeg';
-import img3 from '../../images/swiper/IMG_3897 (2).jpeg';
-import img4 from '../../images/swiper/IMG_6746.jpeg';
 const Info = () => {
 
   return (
@@ -31,10 +27,10 @@ const Info = () => {
   modules={[Autoplay, Pagination]} 
   className="mySwiper"
 >
-  <SwiperSlide><img src={img1} alt="foto1" width={300} /></SwiperSlide>
-  <SwiperSlide><img src={img2} alt="foto2" width={300} /></SwiperSlide>
-  <SwiperSlide><img src={img3} alt="foto3" width={300} /></SwiperSlide>
-  <SwiperSlide><img src={img4} alt="foto4" width={300} /></SwiperSlide>
+  <SwiperSlide><img src="foto1" alt="foto1" width={300} /></SwiperSlide>
+  <SwiperSlide><img src="foto2" alt="foto2" width={300} /></SwiperSlide>
+  <SwiperSlide><img src="foto3" alt="foto3" width={300} /></SwiperSlide>
+  <SwiperSlide><img src="foto4" alt="foto4" width={300} /></SwiperSlide>
 </Swiper>
       </ImageThumb>
       <div>
