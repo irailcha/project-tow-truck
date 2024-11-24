@@ -1,13 +1,11 @@
 import styled from 'styled-components'
-import mainImagePoster from '../../images/designer.png';
+
 
 export const PosterContainer = styled.div`
   position: relative;
   height: 600px;
   background-color: #b0b0b0;
-  background-image: url(${mainImagePoster});
-  background-size: cover;
-  background-position: center;
+
 
   &::before {
     content: '';
