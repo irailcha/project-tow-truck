@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "./components/Layout/Layout";
 import { Route, Routes } from "react-router-dom";
-import Main from "./pages/Main/Main";
-import Contacts from "./pages/Contacts/Contacts";
-import Reviews from "./pages/Reviews/Reviews";
-import Services from "./pages/Services/Services";
+const Main=React.lazy(() => import('./pages/Main/Main'));
+const Contacts=React.lazy(() => import('./pages/Contacts/Contacts'));
+const Reviews=React.lazy(() => import('./pages/Reviews/Reviews'));
+const Services=React.lazy(() => import('./pages/Services/Services'));
 
 function App(){
 
