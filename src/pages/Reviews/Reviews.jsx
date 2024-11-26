@@ -9,7 +9,8 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-import './Reviews.style'
+import './Reviews.style';
+import {SwiperCard} from './Reviews.style';
 
 
 const Reviews=()=>{
@@ -59,10 +60,10 @@ const Reviews=()=>{
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+      <SwiperSlide><SwiperCard>тут буде відгук</SwiperCard></SwiperSlide>
+      <SwiperSlide><SwiperCard>тут буде відгук</SwiperCard></SwiperSlide>
+      <SwiperSlide><SwiperCard>тут буде відгук</SwiperCard></SwiperSlide>
+      <SwiperSlide><SwiperCard>тут буде відгук</SwiperCard></SwiperSlide>
       </Swiper>
 
 
