@@ -13,23 +13,37 @@ export const InfoSection=styled.div`
 display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 }
 `
 export const InfoEvacuator=styled.div`
  background-color: #f4f4f4;  
-    padding: 70px;              
+    padding: 65px;              
     border-radius: 8px;         
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     text-align: center;       
     max-width: 800px;         
-    margin: 40px auto;         
-  
+    margin: 40px auto;   
+
+    @media (max-width: 768px) {
+      padding: 30px;
+      margin: 20px auto;
+    }
     
     h3 {
       font-size: 2rem;             // Розмір шрифту заголовка
       color: #333;                 // Колір тексту заголовка
       margin-bottom: 20px;         // Відступ знизу
       font-weight: 600;            // Жирний шрифт
+
+
+    @media (max-width: 768px) {
+     font-size: 1.5rem;
+     margin-bottom: 10px;
+    }
     }
   
     p {
@@ -37,9 +51,13 @@ export const InfoEvacuator=styled.div`
       color: #666;                 // Трохи світліший колір для абзацу
       margin-bottom: 20px;         // Відступ знизу
       line-height: 1.6;            // Міжрядковий інтервал для зручності читання
+
+          @media (max-width: 768px) {
+     margin-bottom: 10px;
+    }
     }
   
-    a {
+    button {
       font-size: 1.2rem;           // Розмір шрифту посилання
       color: #0057a3;              // Колір посилання
       text-decoration: none;       // Видалити підкреслення
