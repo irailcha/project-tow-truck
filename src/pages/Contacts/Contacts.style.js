@@ -7,13 +7,14 @@ export const ContactsWrapper = styled.div`
   align-items: center;
   text-align: center;
   padding: 50px 0;
-  background-color: #f9f9f9; /* Білий фон */
+  background-color:  ${({ theme }) => theme.colors.secondary};
+border-radius: 8px;
 `;
 
 // Заголовок
 export const ContactsTitle = styled.h2`
   font-size: 2rem;
-  color: #0057a3; /* Темно-синій акцентний */
+  color:  ${({ theme }) => theme.colors.accent2};
   margin-bottom: 20px;
 `;
 
@@ -22,30 +23,30 @@ export const ContactsText = styled.div`
   margin-bottom: 40px;
   max-width: 800px;
   line-height: 1.6;
-  color: #242323; /* Темний сірий для тексту */
+  color:  ${({ theme }) => theme.colors.text};
 `;
 
 // Абзаци для тексту
 export const ContactsParagraph = styled.p`
-  font-size: 1rem;
-  color: #242323; /* Темний сірий для тексту */
+  font-size: 1.5rem;
+  color:  ${({ theme }) => theme.colors.text};
   margin-bottom: 20px;
 `;
 
 // Список контактів
 export const ContactsItem = styled.li`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   list-style: none;
   margin: 10px 0;
-  color: #242323; /* Темний сірий для тексту */
+  color:  ${({ theme }) => theme.colors.text};
   
   a {
-    color: #0057a3; /* Темно-синій для посилань */
+    color:  ${({ theme }) => theme.colors.accent2};
     text-decoration: none;
     transition: color 0.3s ease;
     
     &:hover {
-      color: #1b1b1b; /* Чорний при наведенні */
+      color:  ${({ theme }) => theme.colors.primary};
     }
 
     svg {
@@ -57,14 +58,14 @@ export const ContactsItem = styled.li`
 
 // Соціальні мережі
 export const ContactsSocial = styled.div`
-  color: #1b1b1b;
+  color:  ${({ theme }) => theme.colors.text};
   padding: 20px;
   width: 100%;
   max-width: 800px;
   border-radius: 8px;
   
   p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
   }
 `;

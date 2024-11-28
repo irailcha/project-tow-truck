@@ -11,7 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Iryna Karpusenko",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.26.0",

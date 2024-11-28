@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  background-color: #1d2225; 
-  padding: 60px 0; 
+  background-color: ${({ theme }) => theme.colors.primary};
+  padding: 40px 0; 
   color: #fff;
   display: flex;
   justify-content: center;

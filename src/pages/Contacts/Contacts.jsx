@@ -22,13 +22,13 @@ const Contacts = () => {
                 Номер телефону <a href="tel:+380663614503"> <IoIosPhonePortrait /> +38 066 361 45 03</a>
               </ContactsItem>
               <ContactsItem>
-                Viber <a href="tel:+380663614503"> <FaViber /> </a>
+                Viber <a href="tel:+380663614503"> <FaViber /> +38 066 361 45 03 </a>
               </ContactsItem>
               <ContactsItem>
-                Telegram <a href="tel:+380663614503"> <FaTelegram /> </a>
+                Telegram <a href="tel:+380663614503"> <FaTelegram /> +38 066 361 45 03 </a>
               </ContactsItem>
               <ContactsItem>
-                WhatsApp <a href="tel:+380663614503"> <FaWhatsapp /> </a>
+                WhatsApp <a href="tel:+380663614503"> <FaWhatsapp /> +38 066 361 45 03 </a>
               </ContactsItem>
             </ul>
           </ContactsText>

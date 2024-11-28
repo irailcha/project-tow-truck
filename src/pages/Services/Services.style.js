@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Page = styled.div`
-  padding: 40px 20px;
-  background-color: #f4f4f4;
-  color: #1b1b1b;
+  margin-top: 30px;
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const Container = styled.div`
@@ -12,17 +12,22 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.section`
+display: flex;
+justify-content: space-between;
+align-items: center;
   margin-bottom: 50px;
   padding: 30px;
-  background: white;
+  background: ${({ theme }) => theme.colors.secondary};
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
+export const SectionContainer=styled.div`
+max-width: 50%`;
 
 export const Title = styled.h2`
   font-size: 28px;
   font-weight: bold;
-  color: #0057a3;
+  color: ${({ theme }) => theme.colors.accent2};
   margin-bottom: 15px;
 `;
 
@@ -49,7 +54,7 @@ export const ContactInfo = styled.div`
   margin-top: 20px;
 
   a {
-    color: #0057a3;
+    color: ${({ theme }) => theme.colors.accent2};
     text-decoration: none;
     font-weight: bold;
 

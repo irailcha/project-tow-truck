@@ -1,91 +1,49 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-// import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 import './Reviews.style';
-import {SwiperCard} from './Reviews.style';
+import { SwiperCard } from './Reviews.style';
+import screen1 from '../../images/screen1.jpg';
 
+const Reviews = () => {
+  const swiperRef = useRef(null);
 
-const Reviews=()=>{
-  const [swiperRef, setSwiperRef] = useState(null);
-
-  let appendNumber = 4;
-  let prependNumber = 1;
-
-  const prepend2 = () => {
-    swiperRef.prependSlide([
-      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-    ]);
-  };
-
-  const prepend = () => {
-    swiperRef.prependSlide(
-      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
-    );
-  };
-
-  const append = () => {
-    swiperRef.appendSlide(
-      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
-    );
-  };
-
-  const append2 = () => {
-    swiperRef.appendSlide([
-      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-    ]);
-  };
+  const slides = [screen1, screen1, screen1, screen1]; 
 
   return (
-    <section className='section'>
-      <div className='container'>
-      <Swiper
-        onSwiper={setSwiperRef}
-        slidesPerView={3}
-        centeredSlides={true}
-        spaceBetween={30}
-        pagination={{
-          type: 'fraction',
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
-      <SwiperSlide><SwiperCard>тут буде відгук</SwiperCard></SwiperSlide>
-      <SwiperSlide><SwiperCard>тут буде відгук</SwiperCard></SwiperSlide>
-      <SwiperSlide><SwiperCard>тут буде відгук</SwiperCard></SwiperSlide>
-      <SwiperSlide><SwiperCard>тут буде відгук</SwiperCard></SwiperSlide>
-      </Swiper>
-
-
-      <p className="append-buttons">
-        <button onClick={() => prepend2()} className="prepend-2-slides">
-          Prepend 2 Slides
-        </button>
-        <button onClick={() => prepend()} className="prepend-slide">
-          Prepend Slide
-        </button>
-        <button onClick={() => append()} className="append-slide">
-          Append Slide
-        </button>
-        <button onClick={() => append2()} className="append-2-slides">
-          Append 2 Slides
-        </button>
-      </p>
-
+    <section className="section">
+      <div className="container">
+        <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          slidesPerView={3}
+          centeredSlides={true}
+          spaceBetween={30}
+          pagination={{
+            type: 'fraction',
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+          breakpoints={{
+            640: { slidesPerView: 1 }, 
+            1024: { slidesPerView: 2 }, 
+            1280: { slidesPerView: 3 },
+          }}
+        >
+          {slides.map((image, index) => (
+            <SwiperSlide key={index}>
+              <SwiperCard>
+                <img src={image} alt={`review ${index + 1}`} width={300} />
+              </SwiperCard>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
-}
-
+};
 
 export default Reviews;

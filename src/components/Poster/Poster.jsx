@@ -6,7 +6,7 @@ const Poster=()=>{
   return(
     <PosterContainer>
       <PosterTitle>Послуги евакуатора всіх видів по місту <span>Дніпро</span> та всій Україні і за її межами</PosterTitle>
-      {/* <PosterButton>Дізнатися більше</PosterButton> */}
+
     </PosterContainer>
   )
 }

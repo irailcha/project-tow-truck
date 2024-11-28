@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink} from "react-router-dom";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
@@ -10,8 +11,10 @@ import {
   HeaderContacts, 
   HeaderTtitle, 
   HeaderElement, 
-  HeaderLink, 
-  ModalButton} from './Header.style'
+  HeaderLink,
+ MenuList, MenuLink, MenuItem,
+ HeaderSocial
+} from './Header.style'
 
 const Header = () => {
 
@@ -21,12 +24,32 @@ const Header = () => {
       <HeaderContainer>
         <Container>
           <HeaderTtitle>Евакуатор 24/7</HeaderTtitle>
+          <nav>
+      <MenuList>
+        <MenuItem >
+        <MenuLink as={NavLink} to="/" end>
+              Головна
+            </MenuLink>
+        </MenuItem>
+        <MenuItem >
+          <MenuLink as={NavLink} to="/services">Послуги</MenuLink>
+        </MenuItem>
+        <MenuItem >
+          <MenuLink  as={NavLink} to="/contacts">Контакти</MenuLink>
+        </MenuItem>
+        <MenuItem >
+          <MenuLink as={NavLink} to="/reviews">Відгуки</MenuLink>
+        </MenuItem>
+      </MenuList>
+    </nav>
           <HeaderContacts>
-            <HeaderElement>
+          
+            <HeaderElement>            
               <HeaderLink href="tel:+380663614503">
                 <IoIosPhonePortrait /> +38 066 361 45 03
-              </HeaderLink>
+              </HeaderLink>           
             </HeaderElement>
+            <HeaderSocial>
             <HeaderElement>
               <HeaderLink href="tel:+380663614503">
                 <FaWhatsapp />
@@ -42,6 +65,7 @@ const Header = () => {
                 <FaViber />
               </HeaderLink>
             </HeaderElement>
+           </HeaderSocial>
           </HeaderContacts>
         </Container>
       </HeaderContainer>
