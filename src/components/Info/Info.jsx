@@ -7,10 +7,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Info.style';
 import { ImageThumb, InfoSection, InfoEvacuator } from './Info.style';
-import image1 from '../../images/image1.jpg';
-import image2 from '../../images/image2.jpg';
-import image3 from '../../images/image3.jpg';
-import image4 from '../../images/image4.jpg';
+import swiper_info_1 from '../../images/swiper_info_1.jpg';
+import swiper_info_2 from '../../images/swiper_info_2.jpg';
+import swiper_info_3 from '../../images/swiper_info_3.jpg';
+import swiper_info_4 from '../../images/swiper_info_4.jpg';
 
 const Info = () => {
   const navigate = useNavigate();
@@ -33,10 +33,10 @@ const Info = () => {
               modules={[Autoplay, Pagination]}
               className="mySwiper"
             >
-              <SwiperSlide><img src={image1} alt="foto1" width={350} /></SwiperSlide>
-              <SwiperSlide><img src={image2} alt="foto2" width={350} /></SwiperSlide>
-              <SwiperSlide><img src={image3} alt="foto3" width={350} /></SwiperSlide>
-              <SwiperSlide><img src={image4} alt="foto4" width={350} /></SwiperSlide>
+              <SwiperSlide><img src={swiper_info_1} alt="foto1" width={350} /></SwiperSlide>
+              <SwiperSlide><img src={swiper_info_2} alt="foto2" width={350} /></SwiperSlide>
+              <SwiperSlide><img src={swiper_info_3} alt="foto3" width={350} /></SwiperSlide>
+              <SwiperSlide><img src={swiper_info_4} alt="foto4" width={350} /></SwiperSlide>
             </Swiper>
           </ImageThumb>
           <InfoEvacuator>

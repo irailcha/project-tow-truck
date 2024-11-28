@@ -232,10 +232,26 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1440px;
     margin: 0;
     padding: 0 60px;
+
+     @media (min-width: 576px) and (max-width: 1024px) {
+    padding: 0 25px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
   }
 
   .section {
     padding: 30px 0;
+
+      @media (min-width: 576px) and (max-width: 1024px) {
+    padding: 20px 0
+  }
+
+  @media (max-width: 575px) {
+    padding: 10px 0
+  }
   }
 `;
 

@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
 export const Page = styled.div`
-  margin-top: 30px;
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.text};
+
+
 `;
 
-export const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-`;
 
 export const Section = styled.section`
 display: flex;
@@ -20,6 +17,7 @@ align-items: center;
   background: ${({ theme }) => theme.colors.secondary};
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 `;
 export const SectionContainer=styled.div`
 max-width: 50%`;

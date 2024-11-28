@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Page,
-  Container,
   Section,
   Title,
   Paragraph,
@@ -9,7 +8,7 @@ import {
   ListItem,
   ContactInfo,
   SectionContainer
-} from "./Services.style"; // Змінити шлях, якщо потрібно
+} from "./Services.style";
 import plug_1 from '../../images/plug_1.jpg';
 import plug_2 from '../../images/plug_2.jpg';
 import plug_3 from '../../images/plug_3.jpg';
@@ -17,8 +16,9 @@ import plug_3 from '../../images/plug_3.jpg';
 
 const Services = () => {
   return (
+    <section className="section">
+      <div className="container">
     <Page>
-      <Container>
         {/* Терміновий евакуатор */}
         <Section>
         <SectionContainer>
@@ -136,8 +136,9 @@ const Services = () => {
             />
           </div>
         </Section>
-      </Container>
     </Page>
+    </div>
+    </section>
   );
 };
 

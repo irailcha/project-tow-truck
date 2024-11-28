@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+
 
 export const HeaderContainer = styled.header`
 position: fixed;
@@ -11,13 +11,14 @@ background-color: ${({ theme }) => theme.colors.secondary};
 padding: 10px 0;
 border-bottom: 1px solid #8b8c89;
 
-  @media (min-width: 769px) and (max-width: 1024px) {
-  padding: 8px 0;
-}
-  /* Мобільні телефони */
-@media (max-width: 375px) {
-  padding: 7px 0;
-}
+ @media (min-width: 576px) and (max-width: 1024px) {
+   padding: 8px 0;
+  }
+
+  @media (max-width: 575px) {
+      padding: 7px 0;
+
+  }
 `
 
 export const Container = styled.div`
@@ -26,129 +27,65 @@ export const Container = styled.div`
   align-items: center;
   padding: 0 60px;
 
-  @media (min-width: 769px) and (max-width: 1024px) {
+  @media (min-width: 576px) and (max-width: 1024px) {
    padding: 0 40px;
-}
+  }
 
-  @media (min-width: 376px) and (max-width: 768px) {
-  padding: 0 20px;
-  flex-direction: column;
-  gap: 15px
-}
-    /* Мобільні телефони */
-@media (max-width: 375px) {
-  padding: 0 15px;
-}
+  @media (max-width: 575px) {
+    flex-direction: column;
+   padding: 0 15px;
+
+  }
 `
 
-export const HeaderTtitle = styled.h1`
+export const HeaderTitle = styled.h1`
+display: inline;
 font-family: 'Gatsby Normal';
   font-size: 40px;
   font-weight: bold;
   color: ${({ theme }) => theme.colors.text};
 
-    @media (min-width: 769px) and (max-width: 1024px) {
-   font-size: 33px;
-}
-    @media (min-width: 376px) and (max-width: 768px) {
-    font-size: 28px;
-}
-        /* Мобільні телефони */
-@media (max-width: 375px) {
-  font-size: 24px;
-}
-`
-
-export const HeaderContacts = styled.ul`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-`
-export const HeaderSocial = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 10px; 
-
-  @media (max-width: 768px) {
-    gap: 5px; 
-  }
-`;
-
-
-export const HeaderElement = styled.li`
-  color: ${({ theme }) => theme.colors.text};
-`
-
-export const HeaderLink = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 50px;
-  color: ${({ theme }) => theme.colors.text};
-  background-color: transparent;
-  transition: all 0.3s ease;
-
-  svg {
-    font-size: 30px;
+  @media (min-width: 576px) and (max-width: 1024px) {
+   font-size: 28px;
   }
 
+  @media (max-width: 575px) {
+  font-size: 20px;
+align-self: start;
+  }
+`
+
+export const MenuButton=styled.button`
+display: none;
+
+@media (max-width: 1024px) {
+position: relative;
+display: block;
+font-weight: 700;
+font-size: 1.5em;
+transition: opacity 0.3s ease, transform 0.3s ease;
   &:hover {
-    color: ${({ theme }) => theme.colors.accent2};
-    background-color: ${({ theme }) => theme.colors.text};
-
-    svg {
-      color: ${({ theme }) => theme.colors.accent2};
-    }
+    transform: scale(1.1);
   }
-`; 
+}
+`
 
-
-
-export const MenuList = styled.ul`
+export const HeaderFlexContainer = styled.div`
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap; 
-  overflow-x: auto; 
+  justify-content: space-between;
+  align-items: center; 
+  
 
-  @media (max-width: 768px) {
-    flex-direction: column; 
-    align-items: center;
+  @media (max-width: 1024px) {
+    flex-direction: row; 
+    width: 50%; 
   }
-`;
 
-export const MenuItem = styled.li`
-  padding: 10px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.text}; 
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 5px; 
-
-
-`;
-
-export const MenuLink = styled(NavLink)`
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 10px 15px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-
-  &:hover,
-  &.active {
-    color: ${({ theme }) => theme.colors.text}; 
-    background-color: ${({ theme }) => theme.colors.primary}; 
-    box-shadow: 0 4px 8px rgba(0, 87, 163, 0.3); 
-    border-radius: 5px;
+  @media (max-width: 575px) {
+  margin-top: 8px;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between; 
+    width: 90%; 
   }
 `;

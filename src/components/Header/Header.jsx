@@ -1,75 +1,46 @@
-import React from "react";
-import { NavLink} from "react-router-dom";
-import { IoIosPhonePortrait } from "react-icons/io";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
-import { FaViber } from "react-icons/fa";
-import  './Header.style'
+import React, { useState, useRef } from "react";
+import HeaderMenu from "../HeaderMenu/HeaderMenu";
+import HeaderContactsComponent from "../HeaderContacts/HeaderContactsComponent";
+import ModalMenu from "../ModalMenu/ModalMenu";
+import  './Header.style';
 import {
   HeaderContainer, 
-  Container, 
-  HeaderContacts, 
-  HeaderTtitle, 
-  HeaderElement, 
-  HeaderLink,
- MenuList, MenuLink, MenuItem,
- HeaderSocial
-} from './Header.style'
+  Container,
+  HeaderTitle, 
+  MenuButton,
+  HeaderFlexContainer
+} from './Header.style';
 
 const Header = () => {
+const [isModalOpen, setIsModalOpen] =useState(false)
+const [modalPosition, setModalPosition] = useState(null);
+  const buttonRef = useRef(null);
 
+  const toggleModal = () => {
+    if (buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect();
+      setModalPosition({
+        top: rect.bottom, 
+        left: rect.left, 
+      });
+    }
+    setIsModalOpen((prevState) => !prevState);
+  };
 
   return (
     <>
       <HeaderContainer>
         <Container>
-          <HeaderTtitle>Евакуатор 24/7</HeaderTtitle>
-          <nav>
-      <MenuList>
-        <MenuItem >
-        <MenuLink as={NavLink} to="/" end>
-              Головна
-            </MenuLink>
-        </MenuItem>
-        <MenuItem >
-          <MenuLink as={NavLink} to="/services">Послуги</MenuLink>
-        </MenuItem>
-        <MenuItem >
-          <MenuLink  as={NavLink} to="/contacts">Контакти</MenuLink>
-        </MenuItem>
-        <MenuItem >
-          <MenuLink as={NavLink} to="/reviews">Відгуки</MenuLink>
-        </MenuItem>
-      </MenuList>
-    </nav>
-          <HeaderContacts>
-          
-            <HeaderElement>            
-              <HeaderLink href="tel:+380663614503">
-                <IoIosPhonePortrait /> +38 066 361 45 03
-              </HeaderLink>           
-            </HeaderElement>
-            <HeaderSocial>
-            <HeaderElement>
-              <HeaderLink href="tel:+380663614503">
-                <FaWhatsapp />
-              </HeaderLink>
-            </HeaderElement>
-            <HeaderElement>
-              <HeaderLink href="tel:+380663614503">
-                <FaTelegram />
-              </HeaderLink>
-            </HeaderElement>
-            <HeaderElement>
-              <HeaderLink href="tel:+380663614503">
-                <FaViber />
-              </HeaderLink>
-            </HeaderElement>
-           </HeaderSocial>
-          </HeaderContacts>
+          <HeaderTitle>Евакуатор 24/7</HeaderTitle>
+          <HeaderMenu/>
+          <HeaderFlexContainer>
+          <MenuButton onClick={toggleModal} ref={buttonRef}>Menu</MenuButton>
+          {isModalOpen && <ModalMenu onClose={toggleModal} position={modalPosition}/>}
+          <HeaderContactsComponent/>
+          </HeaderFlexContainer>
         </Container>
       </HeaderContainer>
     </>
   );
 };
-export default Header
+export default Header;
