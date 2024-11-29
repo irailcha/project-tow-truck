@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 export const MenuContainer=styled.nav`
 display: block;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1076px) {
 display: none;
   }
 `

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Page = styled.div`
+  padding-top:70px;
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.text};
 
@@ -8,7 +9,7 @@ export const Page = styled.div`
 `;
 
 
-export const Section = styled.section`
+export const SectionService = styled.section`
 display: flex;
 justify-content: space-between;
 align-items: center;

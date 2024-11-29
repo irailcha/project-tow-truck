@@ -1,25 +1,26 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-export const ModalContainer=styled.div`
- position: absolute;
+export const ModalContainer = styled.div`
+  position: absolute;
   top: ${({ position }) => (position ? `${position.top}px` : "0")};
-  left: ${({ position }) => (position ? `${position.left}px` : "0")};
-  transform: translateY(0); 
-  transform: translateX(-25%); 
-  padding: 10px 0 ;
+  left: ${({ position }) =>
+    position ? `${position.left + position.width / 2}px` : "0"};
+  transform: translateX(-50%); /* Центруємо по горизонталі */
+  padding: 10px 0;
   width: 150px;
-  background-color: ${({ theme }) => theme.colors.text}; 
+  background-color: ${({ theme }) => theme.colors.text};
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   z-index: 1000;
   transition: transform 0.3s ease, opacity 0.3s ease;
 
   &.active {
-    transform: translateY(0) translateX(-25%); 
+    transform: translateX(-50%) translateY(0); /* Зберігаємо центрування */
     opacity: 1;
   }
-`
+`;
+
 
 export const MenuList = styled.ul`
   display: flex;

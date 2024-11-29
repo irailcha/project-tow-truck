@@ -8,7 +8,8 @@ import {
   Container,
   HeaderTitle, 
   MenuButton,
-  HeaderFlexContainer
+  HeaderFlexContainer,
+
 } from './Header.style';
 
 const Header = () => {
@@ -22,6 +23,7 @@ const [modalPosition, setModalPosition] = useState(null);
       setModalPosition({
         top: rect.bottom, 
         left: rect.left, 
+        width: rect.width, 
       });
     }
     setIsModalOpen((prevState) => !prevState);
@@ -31,13 +33,14 @@ const [modalPosition, setModalPosition] = useState(null);
     <>
       <HeaderContainer>
         <Container>
+          <HeaderFlexContainer>
+        <MenuButton onClick={toggleModal} ref={buttonRef}>Menu</MenuButton>
+        {isModalOpen && <ModalMenu onClose={toggleModal} position={modalPosition}/>}
           <HeaderTitle>Евакуатор 24/7</HeaderTitle>
           <HeaderMenu/>
-          <HeaderFlexContainer>
-          <MenuButton onClick={toggleModal} ref={buttonRef}>Menu</MenuButton>
-          {isModalOpen && <ModalMenu onClose={toggleModal} position={modalPosition}/>}
-          <HeaderContactsComponent/>
           </HeaderFlexContainer>
+          <HeaderContactsComponent/>
+
         </Container>
       </HeaderContainer>
     </>

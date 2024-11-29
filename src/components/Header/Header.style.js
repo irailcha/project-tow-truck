@@ -11,7 +11,7 @@ background-color: ${({ theme }) => theme.colors.secondary};
 padding: 10px 0;
 border-bottom: 1px solid #8b8c89;
 
- @media (min-width: 576px) and (max-width: 1024px) {
+ @media (min-width: 576px) and (max-width: 1076px) {
    padding: 8px 0;
   }
 
@@ -27,12 +27,12 @@ export const Container = styled.div`
   align-items: center;
   padding: 0 60px;
 
-  @media (min-width: 576px) and (max-width: 1024px) {
+  @media (min-width: 576px) and (max-width: 1076px) {
    padding: 0 40px;
   }
 
   @media (max-width: 575px) {
-    flex-direction: column;
+    flex-direction: row;
    padding: 0 15px;
 
   }
@@ -45,7 +45,7 @@ font-family: 'Gatsby Normal';
   font-weight: bold;
   color: ${({ theme }) => theme.colors.text};
 
-  @media (min-width: 576px) and (max-width: 1024px) {
+  @media (min-width: 576px) and (max-width: 1076px) {
    font-size: 28px;
   }
 
@@ -58,7 +58,7 @@ align-self: start;
 export const MenuButton=styled.button`
 display: none;
 
-@media (max-width: 1024px) {
+@media (max-width: 1076px) {
 position: relative;
 display: block;
 font-weight: 700;
@@ -70,22 +70,24 @@ transition: opacity 0.3s ease, transform 0.3s ease;
 }
 `
 
+
 export const HeaderFlexContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  
+  width: 80%; 
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1076px) {
     flex-direction: row; 
-    width: 50%; 
+    width: 60%; 
   }
 
   @media (max-width: 575px) {
-  margin-top: 8px;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: space-between; 
-    width: 90%; 
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+  
   }
+
 `;

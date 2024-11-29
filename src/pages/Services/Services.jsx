@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Page,
-  Section,
+  SectionService,
   Title,
   Paragraph,
   List,
@@ -20,7 +20,7 @@ const Services = () => {
       <div className="container">
     <Page>
         {/* Терміновий евакуатор */}
-        <Section>
+        <SectionService>
         <SectionContainer>
           <Title>Терміновий евакуатор</Title>
           <Paragraph>
@@ -59,10 +59,10 @@ const Services = () => {
               style={{ width: "100%", maxWidth: "400px" }}
             />
           </div>
-        </Section>
+        </SectionService>
 
         {/* Попутній евакуатор */}
-        <Section>
+        <SectionService>
         <div>
             <img
               src={plug_2}
@@ -97,10 +97,10 @@ const Services = () => {
             <a href="tel:+380663614503">+38 066 361 45 03</a>
           </ContactInfo>
           </SectionContainer>
-        </Section>
+        </SectionService>
 
         {/* Перегон авто за кордон */}
-        <Section>
+        <SectionService>
           <SectionContainer>
           <Title>Спеціальні послуги: Перегон авто за кордон</Title>
           <Paragraph>
@@ -135,7 +135,7 @@ const Services = () => {
               style={{ width: "100%", maxWidth: "400px" }}
             />
           </div>
-        </Section>
+        </SectionService>
     </Page>
     </div>
     </section>
