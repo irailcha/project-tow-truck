@@ -19,7 +19,7 @@ const Contacts = () => {
 
             <ul>
               <ContactsItem>
-                Номер телефону <a href="tel:+380663614503"> <IoIosPhonePortrait /> +38 066 361 45 03</a>
+               <a href="tel:+380663614503"> <IoIosPhonePortrait /> +38 066 361 45 03</a>
               </ContactsItem>
               <ContactsItem>
                 Viber <a href="tel:+380663614503"> <FaViber /> +38 066 361 45 03 </a>

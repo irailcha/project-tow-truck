@@ -5,7 +5,7 @@ export const PosterContainer = styled.div`
   max-height: 740px;
   width: 100%;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 100px;
   
   .poster-image {
     width: 100%;
@@ -15,11 +15,11 @@ export const PosterContainer = styled.div`
   }
 
   @media (min-width: 576px) and (max-width: 1024px) {
-    padding-top: 55px;
+    padding-top: 77px;
   }
 
   @media (max-width: 575px) {
-    padding-top: 60px;
+    padding-top: 80px;
   }
 `;
 

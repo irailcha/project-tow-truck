@@ -7,9 +7,9 @@ top: 0;
 left: 0;
 width: 100%;
 z-index:999;
-background-color: ${({ theme }) => theme.colors.secondary};
+background-color: ${({ theme }) => theme.colors.accent};
 padding: 10px 0;
-border-bottom: 1px solid #8b8c89;
+border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
 
  @media (min-width: 576px) and (max-width: 1076px) {
    padding: 8px 0;
@@ -40,7 +40,7 @@ export const Container = styled.div`
 
 export const HeaderTitle = styled.h1`
 display: inline;
-font-family: 'Gatsby Normal';
+
   font-size: 40px;
   font-weight: bold;
   color: ${({ theme }) => theme.colors.text};

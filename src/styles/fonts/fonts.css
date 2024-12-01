@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Gatsby Normal';
+  src: url('./font-list/Gatsby-Normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gatsby Normal';
+  src: url('./font-list/Gatsby-Normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Serif Text';
+  src: url('./font-list/DMSerifText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('./font-list/PTSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif Bold';
+  src: url('./font-list/PTSerif-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

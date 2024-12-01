@@ -11,16 +11,13 @@ import screen1 from '../../images/screen1.jpg';
 const Reviews = () => {
   const swiperRef = useRef(null);
 
-  const slides = [screen1, screen1, screen1, screen1]; 
+  const slides = [screen1, screen1, screen1, screen1, screen1, screen1]; 
 
   return (
     <section className="section">
       <div className="container">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
-          slidesPerView={3}
-          centeredSlides={true}
-          spaceBetween={30}
           pagination={{
             type: 'fraction',
           }}
@@ -28,9 +25,10 @@ const Reviews = () => {
           modules={[Pagination, Navigation]}
           className="mySwiper"
           breakpoints={{
-            640: { slidesPerView: 1 }, 
-            1024: { slidesPerView: 2 }, 
-            1280: { slidesPerView: 3 },
+            575: { slidesPerView: 1, spaceBetween: 10 }, // 3 слайди на великих екранах
+            768: { slidesPerView: 2, spaceBetween: 10 }, // 1 слайд на мобільних
+            1024: { slidesPerView: 3, spaceBetween: 15 }, // 1 слайд на мобільних
+            1280: { slidesPerView: 4, spaceBetween: 15 }, // 3 слайди на великих екранах
           }}
         >
           {slides.map((image, index) => (

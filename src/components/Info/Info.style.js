@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import '../../styles/fonts/Gatsby-Normal.ttf';
+
 
 export const ImageThumb = styled.div`
   height: 320px;
@@ -7,6 +7,13 @@ export const ImageThumb = styled.div`
   background-color: ${({ theme }) => theme.colors.secondary};
   overflow: hidden;
   border-radius: 8px;
+
+
+    @media (max-width: 575px) {
+     height: 250px;
+  width: 350px;
+
+  }
 `;
 
 export const InfoSection = styled.div`

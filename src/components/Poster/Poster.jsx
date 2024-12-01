@@ -13,7 +13,7 @@ const Poster = () => {
         alt="Poster" 
         className="poster-image"
         srcSet={`${poster_mobile} 480w, ${poster_tablet} 768w, ${poster_desktop} 1024w`} 
-        sizes="(max-width: 575px) 100vw, (max-width: 1024px) 100vw, 100vw"
+        sizes="(max-width: 575px) 100vw, (max-width: 1024px) 75vw, 50vw"
         style={{ width: "100%", height: "auto" }}
       />
       <PosterTitle>

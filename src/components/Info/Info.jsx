@@ -33,10 +33,10 @@ const Info = () => {
               modules={[Autoplay, Pagination]}
               className="mySwiper"
             >
-              <SwiperSlide><img src={swiper_info_1} alt="foto1" width={350} /></SwiperSlide>
-              <SwiperSlide><img src={swiper_info_2} alt="foto2" width={350} /></SwiperSlide>
-              <SwiperSlide><img src={swiper_info_3} alt="foto3" width={350} /></SwiperSlide>
-              <SwiperSlide><img src={swiper_info_4} alt="foto4" width={350} /></SwiperSlide>
+              <SwiperSlide><img src={swiper_info_1} alt="foto1" width={350} loading="lazy"/></SwiperSlide>
+              <SwiperSlide><img src={swiper_info_2} alt="foto2" width={350} loading="lazy"/></SwiperSlide>
+              <SwiperSlide><img src={swiper_info_3} alt="foto3" width={350} loading="lazy"/></SwiperSlide>
+              <SwiperSlide><img src={swiper_info_4} alt="foto4" width={350} loading="lazy"/></SwiperSlide>
             </Swiper>
           </ImageThumb>
           <InfoEvacuator>
@@ -48,7 +48,7 @@ const Info = () => {
               <li><strong>Цілодобова підтримка:</strong> Ми працюємо без вихідних, 24/7.</li>
               <li><strong>Доступні ціни:</strong> Прозорі умови без прихованих платежів.</li>
             </ul>
-            <button onClick={() => navigate('/services')}>Дізнатися більше</button>
+            <button onClick={() => navigate('/services')} aria-label="Дізнатися більше про наші послуги">Дізнатися більше</button>
           </InfoEvacuator>
         </InfoSection>
       </div>

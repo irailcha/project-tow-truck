@@ -1,50 +1,10 @@
 import 'modern-normalize/modern-normalize.css';
 import { createGlobalStyle } from 'styled-components';
-import './fonts/DMSerifText-Regular.ttf';
-import './fonts/PTSerif-Bold.ttf';
-import './fonts/PTSerif-Regular.ttf';
-import './fonts/Gatsby-Normal.woff';
+import './fonts/fonts.css'; 
+
 
 const GlobalStyles = createGlobalStyle`
- @font-face {
-    font-family: 'Gatsby Normal';
-    src: url('./fonts/Gatsby-Normal.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-     @font-face {
-    font-family: 'Gatsby Normal';
-    src: url('./fonts/Gatsby-Normal.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-     @font-face {
-    font-family: 'Gatsby Normal';
-    src: url('./fonts/Gatsby-Normal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
 
-  @font-face {
-    font-family: 'DM Serif Text';
-    src: url('./fonts/DMSerifText-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'PT Serif';
-    src: url('./fonts/PTSerif-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'PT Serif Bold';
-    src: url('./fonts/PTSerif-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-  }
 
 
   * {
@@ -158,7 +118,6 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
     font-family: 'PT Serif', serif;
     line-height: 1;
-    padding: 25px 15px;
     background-color: #0d1b2a;
     color: #e0e1dd;
   }
@@ -243,14 +202,15 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .section {
-    padding: 30px 0;
+   padding-top: 140px;
+   padding-bottom: 30px;
 
       @media (min-width: 576px) and (max-width: 1024px) {
-    padding: 20px 0
+    padding-top: 100px;
   }
 
   @media (max-width: 575px) {
-    padding: 10px 0
+    padding-top: 100px;
   }
   }
 `;
