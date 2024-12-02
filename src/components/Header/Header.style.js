@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import {Link} from 'react-router-dom';
 
 export const HeaderContainer = styled.header`
 position: fixed;
@@ -10,7 +10,6 @@ z-index:999;
 background-color: ${({ theme }) => theme.colors.accent};
 padding: 10px 0;
 border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
-
  @media (min-width: 576px) and (max-width: 1076px) {
    padding: 8px 0;
   }
@@ -25,20 +24,16 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
 
-  @media (min-width: 576px) and (max-width: 1076px) {
-   padding: 0 40px;
-  }
+
+
 
   @media (max-width: 575px) {
     flex-direction: row;
-   padding: 0 15px;
-
   }
 `
 
-export const HeaderTitle = styled.h1`
+export const HeaderTitle = styled(Link)`
 display: inline;
 
   font-size: 40px;
@@ -75,11 +70,11 @@ export const HeaderFlexContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  width: 80%; 
-
+  gap: 40px;
   @media (max-width: 1076px) {
     flex-direction: row; 
-    width: 60%; 
+    gap: 80px;
+
   }
 
   @media (max-width: 575px) {

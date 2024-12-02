@@ -44,7 +44,7 @@ const Emergancy=()=>{
             </ListItem>
           </List>
           <ContactInfo>
-            Звертайтесь за номером{" "}
+            Звертайтесь за номером<br/>{' '}
             <a href="tel:+380663614503">+38 066 361 45 03</a>
           </ContactInfo>
           </SectionContainer>

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,6 +11,10 @@ module.exports = {
     clean: true,
   },
   mode: 'production',
+  optimization: {
+    usedExports: true, 
+    minimizer: [new TerserPlugin()],
+  },
   devServer: {
     static: './dist',
     hot: true,
@@ -30,7 +35,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpe?g|svg)$/,
+        test: /\.(png|jpe?g|gif|webp)$/i,
         type: 'asset/resource',
       },
       {

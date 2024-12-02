@@ -1,7 +1,7 @@
 {
   "name": "project-tow-track",
   "version": "1.0.0",
- "homepage": "https://irailcha.github.io/project-tow-track/",
+  "homepage": "https://irailcha.github.io/project-tow-track/",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,6 @@
     "@babel/preset-react": "^7.25.9",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
-    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.6.3",
     "modern-normalize": "^3.0.1",
     "react": "^18.3.1",
@@ -33,6 +32,7 @@
     "webpack-cli": "^5.1.4"
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "gh-pages": "^6.2.0",
     "webpack-dev-server": "^5.1.0"
   }

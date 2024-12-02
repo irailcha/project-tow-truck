@@ -32,17 +32,19 @@ const [modalPosition, setModalPosition] = useState(null);
   return (
     <>
       <HeaderContainer>
+      <div className="container">
         <Container>
           <HeaderFlexContainer>
         <MenuButton onClick={toggleModal} ref={buttonRef}>Menu</MenuButton>
         {isModalOpen && <ModalMenu onClose={toggleModal} position={modalPosition}/>}
-          <HeaderTitle>Евакуатор 24/7</HeaderTitle>
+          <HeaderTitle to="/" aria-label="Перейти на головну сторінку"> Евакуатор 24/7</HeaderTitle>
           <HeaderMenu/>
           </HeaderFlexContainer>
           <HeaderContactsComponent/>
-
         </Container>
+        </div>
       </HeaderContainer>
+
     </>
   );
 };

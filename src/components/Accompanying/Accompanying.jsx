@@ -47,7 +47,7 @@ const Accompanying=()=>{
             </ListItem>
           </List>
           <ContactInfo>
-            Деталі дізнайтесь за номером{" "}
+            Деталі дізнайтесь за номером<br/>{' '}
             <a href="tel:+380663614503">+38 066 361 45 03</a>
           </ContactInfo>
           </SectionContainer>

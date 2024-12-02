@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink} from "react-router-dom";
 import './HeaderMenu.style';
-import {MenuContainer,MenuList, MenuItem,MenuLink} from './HeaderMenu.style';
+import {MenuContainer,MenuList, MenuLink} from './HeaderMenu.style';
 
 
 const HeaderMenu=()=>{
@@ -10,20 +10,20 @@ const HeaderMenu=()=>{
   return(
     <MenuContainer>
     <MenuList>
-      <MenuItem >
+      <li >
       <MenuLink as={NavLink} to="/" end>
             Головна
           </MenuLink>
-      </MenuItem>
-      <MenuItem >
+      </li>
+      <li >
         <MenuLink as={NavLink} to="/services">Послуги</MenuLink>
-      </MenuItem>
-      <MenuItem >
+      </li>
+      <li >
         <MenuLink  as={NavLink} to="/contacts">Контакти</MenuLink>
-      </MenuItem>
-      <MenuItem >
+      </li>
+      <li >
         <MenuLink as={NavLink} to="/reviews">Відгуки</MenuLink>
-      </MenuItem>
+      </li>
     </MenuList>
   </MenuContainer>
   )

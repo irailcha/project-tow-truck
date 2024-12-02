@@ -69,13 +69,11 @@ export const ContactsParagraph = styled.p`
 // Список контактів
 export const ContactsItem = styled.li`
   font-size: 1.5rem;
-  list-style: none;
   margin: 10px 0;
   color:  ${({ theme }) => theme.colors.text};
 
   a {
     color:  ${({ theme }) => theme.colors.accent2};
-    text-decoration: none;
     transition: color 0.3s ease;
 
     &:hover {

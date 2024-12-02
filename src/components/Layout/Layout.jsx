@@ -12,9 +12,8 @@ const Layout=()=>{
     <Header/>
     <Suspense
           fallback={
-            <div>
+
              <p>Loading...</p>
-            </div>
           }
         >
           <MainContainer>

@@ -1,34 +1,60 @@
 import styled from "styled-components";
 
+
 export const Page = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.text};
 `;
 
+
+export const ServicesList=styled.div`
+display: block;
+   @media (max-width: 575px) {
+display: none;
+
+  }
+`
+
+
+export const ServicesForMobile=styled.div`
+display: none;
+   @media (max-width: 575px) {
+display: block;
+margin-bottom: -100px;
+  }
+`
+
 export const SectionThumb=styled.div`
-  margin-bottom: 50px;
   padding: 30px;
   background: ${({ theme }) => theme.colors.secondary};
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-bottom: 30px;
+  @media (max-width: 575px) {
+    margin-top: 130px;
+    
+      }
 
 `
 
 export const SectionService = styled.section`
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   
   @media (min-width: 576px) and (max-width: 1024px) {
-  gap: 15px;
-  align-items: start;
+    gap: 15px;
+    align-items: start;
   }
-    @media (max-width: 575px) {
-      flex-direction: column-reverse;
-      gap: 15px;
+  
+  @media (max-width: 575px) {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
 
-  }
 `;
+
+
 export const SectionContainer=styled.div`
 max-width: 50%;
 
@@ -106,3 +132,16 @@ export const ContactInfo = styled.div`
 
 
 `;
+
+export const StyledParagraph = styled.p`
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: ${({ theme }) => theme.colors.text};
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+`;
+

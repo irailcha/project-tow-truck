@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 
 export const MenuContainer=styled.nav`
 display: block;
-width: 65%;
   @media (max-width: 1076px) {
 display: none;
   }
@@ -13,9 +12,13 @@ display: none;
 export const MenuList = styled.ul`
   display: flex;
   justify-content: space-evenly;
-  list-style-type: none;
-  margin: 0;
+  gap: 10px;
+  padding: 8px 8px;
   flex-wrap: wrap; 
+
+    @media (max-width: 1076px) {
+gap: 15px;
+  }
 
   @media (max-width: 768px) {
     flex-direction: column; 
@@ -23,24 +26,23 @@ export const MenuList = styled.ul`
   }
 `;
 
-export const MenuItem = styled.li`
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.text}; 
-  cursor: pointer;
-`;
 
 export const MenuLink = styled(NavLink)`
-  text-decoration: none;
-  color: inherit;
   display: block;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
   padding: 10px 15px;
-  border-radius: 5px; 
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.text}; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  
+  
 
   &:hover,
-  &.active {
+  &.active {і
     color: ${({ theme }) => theme.colors.text}; 
     background-color: ${({ theme }) => theme.colors.primary}; 
     box-shadow: 0 4px 8px rgba(0, 87, 163, 0.3); 

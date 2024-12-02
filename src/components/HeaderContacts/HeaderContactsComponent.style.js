@@ -1,32 +1,30 @@
 import styled from 'styled-components';
 
-export const HeaderContactsContainer = styled.ul`
+export const HeaderContactsContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 8px;
+    padding: 8px 10px;
 
 `
-export const HeaderSocialList = styled.div`
+export const HeaderSocialList = styled.ul`
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 10px; 
-
   @media (max-width: 768px) {
     gap: 5px; 
   }
 `;
 
 
-export const HeaderElement = styled.li`
-  color: ${({ theme }) => theme.colors.text};
-`
+
 
 export const HeaderLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   font-size: 1em;
   padding: 8px;
   border-radius: 50px;

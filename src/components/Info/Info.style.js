@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -9,14 +10,15 @@ export const ImageThumb = styled.div`
   border-radius: 8px;
 
 
-    @media (max-width: 575px) {
-     height: 250px;
-  width: 350px;
+  @media (max-width: 575px) {
+   height: auto;
+  width: 300px;
+}
 
-  }
-`;
+`
 
 export const InfoSection = styled.div`
+margin: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,49 +30,59 @@ export const InfoSection = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-  }
+    gap: 30px;
+}
+
+  @media (max-width: 575px) {
+    flex-direction: column-reverse;
+    padding: 10px 5px;
+    gap: 10px;
+}
+
+
+  
 `;
 
 export const InfoEvacuator = styled.div`
   margin: 30px auto;
+
   @media (max-width: 768px) {
-    padding: 30px;
+    padding: 20px;
     margin: 20px auto;
   }
 
-  h3 {
-  text-align: center;
-    font-size: 2rem;
+  h2 {
+    text-align: center;
+    font-size: 1.5rem; 
     color: ${({ theme }) => theme.colors.primary};
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: 600;
 
-    @media (max-width: 768px) {
-      font-size: 1.5rem;
+    @media (max-width: 575px) {
+      font-size: 1.1rem; 
       margin-bottom: 10px;
     }
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
     color: ${({ theme }) => theme.colors.primary};
-    margin-bottom: 20px;
-    line-height: 1.6;
+    margin-bottom: 15px;
+    line-height: 1.5;
 
-    @media (max-width: 768px) {
+    @media (max-width: 575px) {
+      font-size: 0.9rem; 
       margin-bottom: 10px;
     }
   }
 
   ul {
-    list-style: none;
-    padding: 0;
     margin-bottom: 20px;
 
     li {
-      font-size: 1.1rem;
+      font-size: 0.9rem; 
       color: ${({ theme }) => theme.colors.primary};
-      line-height: 1.6;
+      line-height: 1.5;
       margin-bottom: 10px;
 
       strong {
@@ -78,8 +90,11 @@ export const InfoEvacuator = styled.div`
       }
     }
   }
+`;
 
-  button {
+
+export const InfoButton= styled(Link)`
+
     font-size: 1.2rem;
     color: ${({ theme }) => theme.colors.text};
     background-color: ${({ theme }) => theme.colors.primary};
@@ -93,5 +108,9 @@ export const InfoEvacuator = styled.div`
       background-color: ${({ theme }) => theme.colors.secondary};
       color: ${({ theme }) => theme.colors.text};
     }
-  }
+
+        @media (max-width: 575px) {
+        display:none;
+
+    }
 `;

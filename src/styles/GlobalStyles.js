@@ -206,11 +206,11 @@ const GlobalStyles = createGlobalStyle`
    padding-bottom: 30px;
 
       @media (min-width: 576px) and (max-width: 1024px) {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 
   @media (max-width: 575px) {
-    padding-top: 100px;
+    padding-top: 120px;
   }
   }
 `;

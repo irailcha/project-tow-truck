@@ -1,12 +1,10 @@
 import React from "react";
-import { IoIosPhonePortrait } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaViber } from "react-icons/fa";
 import './HeaderContactsComponent.style';
 import { 
   HeaderContactsContainer,
-  HeaderElement, 
   HeaderLink,
   HeaderSocialList
  } from './HeaderContactsComponent.style'
@@ -17,27 +15,35 @@ const HeaderContactsComponent=()=>{
 
   return(
     <HeaderContactsContainer>
-    <HeaderElement>            
+         
       <HeaderLink href="tel:+380663614503">
-        <IoIosPhonePortrait /> +38 066 361 45 03
+        +38 066 361 45 03
       </HeaderLink>           
-    </HeaderElement>
+
     <HeaderSocialList>
-    <HeaderElement>
-      <HeaderLink href="tel:+380663614503">
+    <li>
+      <HeaderLink 
+      href="https://wa.me/380663614503" 
+      aria-label="Зв'язатися через WhatsApp">
         <FaWhatsapp />
       </HeaderLink>
-    </HeaderElement>
-    <HeaderElement>
-      <HeaderLink href="tel:+380663614503">
+    </li>
+    <li>
+    <HeaderLink 
+            href="https://t.me/username" 
+            aria-label="Зв'язатися через Telegram"
+          >
         <FaTelegram />
       </HeaderLink>
-    </HeaderElement>
-    <HeaderElement>
-      <HeaderLink href="tel:+380663614503">
+    </li>
+    <li>
+    <HeaderLink 
+            href="viber://chat?number=%2B380663614503" 
+            aria-label="Зв'язатися через Viber"
+          >
         <FaViber />
       </HeaderLink>
-    </HeaderElement>
+    </li>
    </HeaderSocialList>
   </HeaderContactsContainer>
   )
