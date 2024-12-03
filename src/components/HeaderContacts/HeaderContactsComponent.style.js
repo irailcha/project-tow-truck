@@ -46,7 +46,6 @@ export const HeaderLink = styled.a`
   }
 
    @media (min-width: 576px) and (max-width: 1024px) {
-   font-size: 0.8em;
    padding: 5px;
 
    svg {
@@ -55,7 +54,6 @@ export const HeaderLink = styled.a`
   }
 
   @media (max-width: 575px) {
-    font-size: 0.6em;
    svg {
     font-size: 20px;
     

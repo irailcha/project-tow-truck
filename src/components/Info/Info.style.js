@@ -67,12 +67,11 @@ export const InfoEvacuator = styled.div`
   p {
     font-size: 1.2rem; 
     color: ${({ theme }) => theme.colors.primary};
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 1.5;
 
     @media (max-width: 575px) {
       font-size: 0.9rem; 
-      margin-bottom: 10px;
     }
   }
 
@@ -87,7 +86,12 @@ export const InfoEvacuator = styled.div`
 
       strong {
         font-weight: bold;
+        
       }
+    }
+
+     @media (max-width: 575px) {
+      margin-bottom: 0;
     }
   }
 `;

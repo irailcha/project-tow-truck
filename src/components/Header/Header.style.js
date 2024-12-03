@@ -55,9 +55,12 @@ display: none;
 
 @media (max-width: 1076px) {
 position: relative;
-display: block;
+display: flex;
+align-items: center;
+gap: 8px;
 font-weight: 700;
 font-size: 1.5em;
+color: ${({ theme }) => theme.colors.primary};
 transition: opacity 0.3s ease, transform 0.3s ease;
   &:hover {
     transform: scale(1.1);

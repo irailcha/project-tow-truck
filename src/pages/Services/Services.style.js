@@ -107,6 +107,11 @@ export const ListItem = styled.li`
   line-height: 1.6;
   margin-bottom: 10px;
 
+  strong{
+   font-weight: bold;
+   color: ${({ theme }) => theme.colors.accent2};
+   }
+
         @media (max-width: 1024px) {
    font-size: 16px;
    margin-bottom: 9px;
@@ -116,6 +121,7 @@ export const ListItem = styled.li`
 
 export const ContactInfo = styled.div`
   font-size: 18px;
+  line-height: 1.6;
 
   a {
     color: ${({ theme }) => theme.colors.accent2};
@@ -128,6 +134,7 @@ export const ContactInfo = styled.div`
   }
       @media (max-width: 1024px) {
    font-size: 17px;
+   line-height: 1.5;
   }
 
 
@@ -145,3 +152,25 @@ export const StyledParagraph = styled.p`
   }
 `;
 
+export const BtnNavigate=styled.button`
+display: none;
+
+  @media (max-width: 575px) {
+display: flex;
+align-items: center;
+gap: 8px;
+margin-bottom: 20px;
+color: ${({ theme }) => theme.colors.text};
+ background-color: transparent;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.accent2};
+    background-color: ${({ theme }) => theme.colors.text};
+
+    svg {
+      color: ${({ theme }) => theme.colors.accent2};
+    }
+  }
+  }
+`

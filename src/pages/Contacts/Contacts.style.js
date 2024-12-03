@@ -2,42 +2,41 @@ import styled from 'styled-components';
 
 // Контейнер для всього сектора
 export const ContactsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 50px 0;
-  background-color:  ${({ theme }) => theme.colors.secondary};
+  padding: 30px;
+  background: ${({ theme }) => theme.colors.secondary};
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 
-  @media (max-width: 1024px) { // Для планшетів
-    padding: 40px 20px;
+  @media (max-width: 1024px) {
+    padding: 20px;
   }
 
-  @media (max-width: 575px) { // Для мобільних
-    padding: 30px 15px;
+  @media (max-width: 575px) {
+    padding: 15px;
   }
 `;
 
 // Заголовок
 export const ContactsTitle = styled.h2`
-  font-size: 2rem;
-  color:  ${({ theme }) => theme.colors.accent2};
-  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: ${({ theme }) => theme.colors.accent2};
+  margin-bottom: 15px;
 
   @media (max-width: 1024px) {
-    font-size: 1.8rem;
+    font-size: 26px;
+    margin-bottom: 13px;
   }
 
   @media (max-width: 575px) {
-    font-size: 1.4rem;  // Зменшення шрифту для мобільних
+    font-size: 24px;
   }
 `;
 
 // Текстова частина
 export const ContactsText = styled.div`
   margin-bottom: 40px;
-  max-width: 800px;
   line-height: 1.6;
   color:  ${({ theme }) => theme.colors.text};
 
@@ -53,75 +52,52 @@ export const ContactsText = styled.div`
 
 // Абзаци для тексту
 export const ContactsParagraph = styled.p`
-  font-size: 1.5rem;
-  color:  ${({ theme }) => theme.colors.text};
-  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: ${({ theme }) => theme.colors.text};
 
   @media (max-width: 1024px) {
-    font-size: 1.4rem;
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 575px) {
-    font-size: 1.2rem;  // Зменшення шрифту для мобільних
+    font-size: 15px;
   }
 `;
 
 // Список контактів
 export const ContactsItem = styled.li`
-  font-size: 1.5rem;
-  margin: 10px 0;
-  color:  ${({ theme }) => theme.colors.text};
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
 
   a {
-    color:  ${({ theme }) => theme.colors.accent2};
-    transition: color 0.3s ease;
+    color: ${({ theme }) => theme.colors.accent2};
+    text-decoration: none;
+    font-weight: bold;
 
     &:hover {
-      color:  ${({ theme }) => theme.colors.primary};
+      text-decoration: underline;
     }
 
     svg {
-      margin-right: 10px;
-      font-size: 1.4rem;
+      margin-right: 8px;
+      font-size: 18px;
     }
   }
 
   @media (max-width: 1024px) {
-    font-size: 1.4rem;
-  }
+    font-size: 16px;
+    margin-bottom: 9px;
 
-  @media (max-width: 575px) {
-    font-size: 1rem;  
-  }
-`;
-
-// Соціальні мережі
-export const ContactsSocial = styled.div`
-  color:  ${({ theme }) => theme.colors.text};
-  padding: 20px;
-  width: 100%;
-  max-width: 800px;
-  border-radius: 8px;
-
-  p {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-
-    @media (max-width: 1024px) {
-      font-size: 1.4rem;
-    }
-
-    @media (max-width: 575px) {
-      font-size: 1.2rem;  // Зменшення шрифту для мобільних
+    a svg {
+      font-size: 16px;
     }
   }
 
-  @media (max-width: 1024px) {
-    max-width: 700px;
-  }
-
   @media (max-width: 575px) {
-    max-width: 100%;
-    padding: 0 15px;
+    font-size: 15px;
   }
 `;

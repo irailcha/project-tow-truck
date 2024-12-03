@@ -1,5 +1,7 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import '../../pages/Services/Services.style';
+import { FaArrowLeft } from "react-icons/fa";
 import {
   SectionService,
   Title,
@@ -8,14 +10,20 @@ import {
   ListItem,
   ContactInfo,
   SectionContainer,
-  SectionThumb} from '../../pages/Services/Services.style';
+  SectionThumb,
+  BtnNavigate
+} from '../../pages/Services/Services.style';
 import plug_1 from '../../images/plug_1.jpg';
 
 const Emergancy=()=>{
+  const navigate=useNavigate();
+
 
   return(
     <>
     <SectionThumb>
+    <BtnNavigate onClick={()=> navigate('/')}> <FaArrowLeft />{" "}На головну</BtnNavigate>
+
     <Title>Терміновий евакуатор</Title>
             <SectionService>
         <SectionContainer>
@@ -27,19 +35,19 @@ const Emergancy=()=>{
             відреагують на ваш виклик і швидко прибудуть на місце
           </Paragraph>
           <Paragraph>
-            <strong>Ми гарантуємо:</strong>
+            Ми гарантуємо:
           </Paragraph>
           <List>
             <ListItem>
-              Швидкий виїзд — наші водії готові допомогти вам у будь-який час
+            <strong>Швидкий виїзд</strong> — наші водії готові допомогти вам у будь-який час
               доби
             </ListItem>
             <ListItem>
-              Безпека транспортування — сучасне обладнання забезпечує дбайливе
+            <strong>Безпека транспортування</strong> — сучасне обладнання забезпечує дбайливе
               перевезення
             </ListItem>
             <ListItem>
-              Доступну вартість — ціна термінового евакуатора стартує від 1500
+            <strong>Доступну вартість</strong> — ціна термінового евакуатора стартує від 1500
               грн
             </ListItem>
           </List>

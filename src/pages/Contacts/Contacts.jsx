@@ -2,7 +2,7 @@ import React from "react";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { FaWhatsapp, FaTelegram, FaViber } from "react-icons/fa";
 import './Contacts.style';
-import {ContactsTitle, ContactsWrapper, ContactsText, ContactsSocial, ContactsParagraph, ContactsItem} from './Contacts.style';
+import {ContactsTitle, ContactsWrapper, ContactsText, ContactsParagraph, ContactsItem} from './Contacts.style';
 
 const Contacts = () => {
   return (
@@ -33,11 +33,11 @@ const Contacts = () => {
             </ul>
           </ContactsText>
 
-          <ContactsSocial>
+
             <ContactsTitle>Ми активно ділимося корисним контентом у наших соцмережах!</ContactsTitle>
             <ContactsParagraph>📸 Instagram: Дивіться захоплюючі фото, відео та інсайти з нашої роботи, отримуйте корисні поради й натхнення.</ContactsParagraph>
             <ContactsParagraph>🎥 TikTok: Легкий та цікавий контент із яскравими моментами, лайфхаки, а також історії, які заряджають позитивом.</ContactsParagraph>
-          </ContactsSocial>
+  
         </ContactsWrapper>
       </div>
     </section>

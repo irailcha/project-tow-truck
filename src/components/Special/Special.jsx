@@ -1,5 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import '../../pages/Services/Services.style';
+import { FaArrowLeft } from "react-icons/fa";
 import {
   SectionService,
   Title,
@@ -8,15 +10,21 @@ import {
   ListItem,
   ContactInfo,
   SectionContainer,
-  SectionThumb} from '../../pages/Services/Services.style';
+  SectionThumb,
+  BtnNavigate
+} from '../../pages/Services/Services.style';
 import plug_3 from '../../images/plug_3.jpg';
 
 
 
 const Special=()=>{
+const navigate = useNavigate();
+
 
   return(<>
   <SectionThumb>
+  <BtnNavigate onClick={()=> navigate('/')}><FaArrowLeft />{" "}На головну</BtnNavigate>
+
   <Title>Спеціальні послуги: Перегон авто за кордон</Title>
          <SectionService>
           <SectionContainer>
@@ -27,17 +35,17 @@ const Special=()=>{
             комплексний підхід для вашого спокою
           </Paragraph>
           <Paragraph>
-            <strong>Що входить у послугу:</strong>
+            Що входить у послугу:
           </Paragraph>
           <List>
             <ListItem>
-              Планування маршруту для швидкого та безпечного транспортування
+            <strong>Планування маршруту</strong> для швидкого та безпечного транспортування
             </ListItem>
             <ListItem>
-              Підготовка документів та митних процедур
+            <strong>Підготовка документів</strong> та митних процедур
             </ListItem>
             <ListItem>
-              Контроль на всіх етапах перевезення
+            <strong>Контроль</strong> на всіх етапах перевезення
             </ListItem>
           </List>
           <ContactInfo>

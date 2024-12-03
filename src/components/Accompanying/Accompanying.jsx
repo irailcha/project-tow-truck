@@ -1,5 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import '../../pages/Services/Services.style';
+import { FaArrowLeft } from "react-icons/fa";
 import {
   SectionService,
   Title,
@@ -7,14 +9,19 @@ import {
   List,
   ListItem,
   ContactInfo,
-  SectionContainer, SectionThumb} from '../../pages/Services/Services.style';
+  SectionContainer, SectionThumb, BtnNavigate} from '../../pages/Services/Services.style';
 import plug_2 from '../../images/plug_2.jpg';
 
 
 const Accompanying=()=>{
+const navigate=useNavigate();
 
- return (<>
+
+ return (
+ <>
  <SectionThumb>
+  <BtnNavigate onClick={()=> navigate('/')}> <FaArrowLeft />{" "}На головну</BtnNavigate>
+
            <Title>Попутній евакуатор</Title>
        <SectionService>
         <div>
@@ -33,17 +40,17 @@ const Accompanying=()=>{
             маршрутом евакуатора
           </Paragraph>
           <Paragraph>
-            <strong>Ми надаємо:</strong>
+            Ми надаємо:
           </Paragraph>
           <List>
             <ListItem>
-              Індивідуальний підхід — маршрут відповідно до ваших потреб
+            <strong>Індивідуальний підхід</strong> — маршрут відповідно до ваших потреб
             </ListItem>
             <ListItem>
-              Доступну вартість — оптимізовані витрати
+            <strong>Доступну вартість</strong> — оптимізовані витрати
             </ListItem>
             <ListItem>
-              Безпеку перевезення — надійне закріплення авто
+            <strong>Безпеку перевезення</strong> — надійне закріплення авто
             </ListItem>
           </List>
           <ContactInfo>

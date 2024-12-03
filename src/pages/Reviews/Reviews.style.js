@@ -12,20 +12,17 @@ export const SwiperCard = styled.div`
   align-items: center;
 
   img {
-    width: 100%;
-    height: auto;
+
+    height: 400px;
     object-fit: cover;
   }
 
   @media (max-width: 1024px) { 
-    width: 250px;
     height: 400px;
   }
 
   @media (max-width: 575px) { 
   height: 250px;
-    width: 100%;
-    height: auto;  
-    padding-top: 20px;
+  padding-top: 20px;
   }
 `;

@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import HeaderMenu from "../HeaderMenu/HeaderMenu";
 import HeaderContactsComponent from "../HeaderContacts/HeaderContactsComponent";
 import ModalMenu from "../ModalMenu/ModalMenu";
+import { FaAlignJustify } from "react-icons/fa";
 import  './Header.style';
 import {
   HeaderContainer, 
@@ -35,7 +36,7 @@ const [modalPosition, setModalPosition] = useState(null);
       <div className="container">
         <Container>
           <HeaderFlexContainer>
-        <MenuButton onClick={toggleModal} ref={buttonRef}>Menu</MenuButton>
+        <MenuButton onClick={toggleModal} ref={buttonRef}> <FaAlignJustify /> Menu</MenuButton>
         {isModalOpen && <ModalMenu onClose={toggleModal} position={modalPosition}/>}
           <HeaderTitle to="/" aria-label="Перейти на головну сторінку"> Евакуатор 24/7</HeaderTitle>
           <HeaderMenu/>
