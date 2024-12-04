@@ -38,7 +38,7 @@ export const ContactsTitle = styled.h2`
 export const ContactsText = styled.div`
   margin-bottom: 40px;
   line-height: 1.6;
-  color:  ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.primary};
 
   @media (max-width: 1024px) { 
     max-width: 700px;
@@ -46,7 +46,6 @@ export const ContactsText = styled.div`
 
   @media (max-width: 575px) {
     max-width: 100%;
-    padding: 0 15px;
   }
 `;
 
@@ -55,7 +54,7 @@ export const ContactsParagraph = styled.p`
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 15px;
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.primary};
 
   @media (max-width: 1024px) {
     font-size: 16px;

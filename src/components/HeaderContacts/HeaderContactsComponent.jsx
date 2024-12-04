@@ -16,7 +16,8 @@ const HeaderContactsComponent=()=>{
   return(
     <HeaderContactsContainer>
          
-      <HeaderLink href="tel:+380663614503">
+      <HeaderLink href="tel:+380663614503"
+      >
         +38 066 361 45 03
       </HeaderLink>           
 
@@ -24,14 +25,17 @@ const HeaderContactsComponent=()=>{
     <li>
       <HeaderLink 
       href="https://wa.me/380663614503" 
-      aria-label="Зв'язатися через WhatsApp">
+      aria-label="Зв'язатися через WhatsApp"
+      target="_blank" rel="noopener noreferrer">
+        
         <FaWhatsapp />
       </HeaderLink>
     </li>
     <li>
     <HeaderLink 
-            href="https://t.me/username" 
+            href="https://t.me/@alegha_01" 
             aria-label="Зв'язатися через Telegram"
+            target="_blank" rel="noopener noreferrer"
           >
         <FaTelegram />
       </HeaderLink>
@@ -40,6 +44,7 @@ const HeaderContactsComponent=()=>{
     <HeaderLink 
             href="viber://chat?number=%2B380663614503" 
             aria-label="Зв'язатися через Viber"
+            target="_blank" rel="noopener noreferrer"
           >
         <FaViber />
       </HeaderLink>

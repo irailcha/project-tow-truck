@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const Page = styled.div`
   background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.text};
 `;
 
 
@@ -68,7 +67,7 @@ max-width: 50%;
 export const Title = styled.h2`
   font-size: 28px;
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.accent2};
+  color: ${({ theme }) => theme.colors.primary};
   margin-bottom: 15px;
 
 
@@ -83,6 +82,7 @@ export const Paragraph = styled.p`
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 15px;
+  color: ${({ theme }) => theme.colors.primary};
 
   @media (max-width: 1024px) {
    font-size: 16px;
@@ -106,10 +106,11 @@ export const ListItem = styled.li`
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 10px;
+  color: ${({ theme }) => theme.colors.primary};
+
 
   strong{
    font-weight: bold;
-   color: ${({ theme }) => theme.colors.accent2};
    }
 
         @media (max-width: 1024px) {
@@ -122,9 +123,10 @@ export const ListItem = styled.li`
 export const ContactInfo = styled.div`
   font-size: 18px;
   line-height: 1.6;
+  color: ${({ theme }) => theme.colors.primary};
 
   a {
-    color: ${({ theme }) => theme.colors.accent2};
+    color: ${({ theme }) => theme.colors.primary};
     text-decoration: none;
     font-weight: bold;
 
@@ -160,7 +162,7 @@ display: flex;
 align-items: center;
 gap: 8px;
 margin-bottom: 20px;
-color: ${({ theme }) => theme.colors.text};
+color: ${({ theme }) => theme.colors.accent2};
  background-color: transparent;
   transition: all 0.3s ease;
 

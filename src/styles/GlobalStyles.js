@@ -188,7 +188,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .container {
-    max-width: 1440px;
     margin: 0;
     padding: 0 60px;
 
