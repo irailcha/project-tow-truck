@@ -60,7 +60,7 @@ align-items: center;
 gap: 8px;
 font-weight: 700;
 font-size: 1.5em;
-color: ${({ theme }) => theme.colors.primary};
+color: ${({ theme }) => theme.colors.text};
 transition: opacity 0.3s ease, transform 0.3s ease;
   &:hover {
     transform: scale(1.1);

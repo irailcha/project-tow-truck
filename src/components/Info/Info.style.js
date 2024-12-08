@@ -8,6 +8,10 @@ export const ImageThumb = styled.div`
   overflow: hidden;
   border-radius: 8px;
 
+
+  img{
+  width: 100%;}
+
   @media (max-width: 575px) {
     height: auto;
     width: 300px;
@@ -102,7 +106,7 @@ export const InfoButton = styled(Link)`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary};
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   @media (max-width: 575px) {

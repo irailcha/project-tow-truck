@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
-    publicPath: '/',
+    publicPath: '/project-tow-track/',
     clean: true,
   },
   mode: 'production',
@@ -38,7 +38,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpe?g|gif|webp)$/i,
+        test: /\.(png|jpe?g|gif|webp|ico)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]', 
@@ -60,6 +60,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
+      favicon: './src/images/favicon.ico',
     }),
   ],
 };

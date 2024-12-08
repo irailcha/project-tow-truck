@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const PosterContainer = styled.div`
   position: relative;
-  max-height: 740px;
+  max-height: 830px;
   width: 100%;
   overflow: hidden;
   padding-top: 120px;

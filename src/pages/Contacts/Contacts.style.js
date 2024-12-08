@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-// Контейнер для всього сектора
 export const ContactsWrapper = styled.div`
   padding: 30px;
   background: ${({ theme }) => theme.colors.secondary};
@@ -17,7 +16,6 @@ export const ContactsWrapper = styled.div`
   }
 `;
 
-// Заголовок
 export const ContactsTitle = styled.h2`
   font-size: 28px;
   font-weight: bold;
@@ -34,7 +32,6 @@ export const ContactsTitle = styled.h2`
   }
 `;
 
-// Текстова частина
 export const ContactsText = styled.div`
   margin-bottom: 40px;
   line-height: 1.6;
@@ -49,7 +46,6 @@ export const ContactsText = styled.div`
   }
 `;
 
-// Абзаци для тексту
 export const ContactsParagraph = styled.p`
   font-size: 18px;
   line-height: 1.8;
@@ -66,7 +62,6 @@ export const ContactsParagraph = styled.p`
   }
 `;
 
-// Список контактів
 export const ContactsItem = styled.li`
   font-size: 18px;
   line-height: 1.6;

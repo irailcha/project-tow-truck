@@ -30,7 +30,7 @@ const Contacts = () => {
     </a>
   </ContactsItem>
   <ContactsItem>
-    <a href="https://t.me/@alegha_01" aria-label="Зв'язатися через Telegram" target="_blank" rel="noopener noreferrer">
+    <a href="href=https://t.me/alegha_01"  aria-label="Зв'язатися через Telegram" target="_blank" rel="noopener noreferrer">
       Telegram <FaTelegram style={{ marginLeft: '5px' }} />
     </a>
   </ContactsItem>

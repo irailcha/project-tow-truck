@@ -182,9 +182,7 @@ const GlobalStyles = createGlobalStyle`
 
   img {
     display: block;
-    width: 100%;
     border-radius: 12px;
-    height: auto;
   }
 
   .container {

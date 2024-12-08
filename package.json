@@ -4,6 +4,7 @@
   "homepage": "https://irailcha.github.io/project-tow-track/",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
+  "sideEffects": false,
   "scripts": {
     "start": "webpack serve --config webpack.config.js",
     "build": "rm -rf dist && webpack --mode production",

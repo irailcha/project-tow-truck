@@ -8,3 +8,6 @@ display:none;
   display: block;
 }
 `
+
+export const MainContainer=styled.div`
+position: relative;`
