@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { NavLink} from "react-router-dom";
 import './ModalMenu.styled';
 import {ModalContainer, MenuList, MenuItem,MenuLink, } from './ModalMenu.styled';
@@ -10,6 +10,15 @@ const ModalMenu=({onClose, position })=>{
   e.stopPropagation();
   onClose();
  }
+
+ useEffect(() => {
+  document.body.style.overflow = 'hidden';
+
+  return () => {
+    document.body.style.overflow = '';
+
+  };
+}, []);
 
   return(
 

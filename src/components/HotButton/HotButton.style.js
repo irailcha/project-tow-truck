@@ -8,7 +8,7 @@ export const ButtonStyle = styled.a`
   bottom: 40px;
   right: 40px;
   z-index: 9999;
-  background-color: ${({ theme }) => theme.colors.text};
+  background-color: ${({ theme }) => theme.colors.accent};
   border: 1px solid ${({ theme }) => theme.colors.primary};
   animation: pulseRotation 4s infinite ease-in-out; 
   text-align: center;
@@ -16,7 +16,7 @@ export const ButtonStyle = styled.a`
   svg {
     width: 40px;
     height: 40px;
-    color: #9d0208;
+    color: ${({ theme }) => theme.colors.text};;
   }
 
   &:hover {

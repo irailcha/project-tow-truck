@@ -6,17 +6,17 @@ export const ModalContainer = styled.div`
   top: ${({ position }) => (position ? `${position.top}px` : "0")};
   left: ${({ position }) =>
     position ? `${position.left + position.width / 2}px` : "0"};
-  transform: translateX(-50%); /* Центруємо по горизонталі */
+  transform: translateX(-50%);
   padding: 10px 0;
   width: 150px;
-  background-color: ${({ theme }) => theme.colors.text};
+  background-color: ${({ theme }) => theme.colors.accent};
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   z-index: 1000;
   transition: transform 0.3s ease, opacity 0.3s ease;
 
   &.active {
-    transform: translateX(-50%) translateY(0); /* Зберігаємо центрування */
+    transform: translateX(-50%) translateY(0); 
     opacity: 1;
   }
 `;
@@ -38,7 +38,7 @@ export const MenuItem = styled.li`
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.primary}; 
+  color: ${({ theme }) => theme.colors.text};
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 5px; 
