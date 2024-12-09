@@ -1,7 +1,7 @@
 {
-  "name": "project-tow-track",
+  "name": "project-tow-truck",
   "version": "1.0.0",
-  "homepage": "https://irailcha.github.io/project-tow-track/",
+  "homepage": "https://irailcha.github.io/project-tow-truck/",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "sideEffects": false,

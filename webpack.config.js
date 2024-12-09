@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
-    publicPath: '/project-tow-track/',
+    publicPath: '/',
     clean: true,
   },
   mode: 'production',
