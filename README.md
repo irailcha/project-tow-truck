@@ -17,7 +17,6 @@ https://evakuator24.dp.ua/
 ## Структура проекту
 ![image](https://github.com/user-attachments/assets/1f3d2582-265e-440a-ab1c-072997e49c84)
 
-
 ## Домен
 
 Проект розміщений на домені [imena.ua](https://imena.ua)
@@ -27,10 +26,10 @@ https://evakuator24.dp.ua/
 
 1. Клонуйте репозиторій:
    ```bash
-   git clone <URL вашого репозиторію>
+   git clone https://github.com/irailcha/project-tow-truck.git
 
 2. Перейдіть до директорії проекту:
-cd назва_вашого_проекту
+cd project-tow-truck
 
 3. Встановіть залежності:
 npm install
