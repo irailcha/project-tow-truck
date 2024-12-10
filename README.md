@@ -26,7 +26,7 @@ https://evakuator24.dp.ua/
 
 1. Клонуйте репозиторій:
    ```bash
-   git clone https://github.com/irailcha/project-tow-truck.git
+   git clone https://github.com/irailcha/project-tow-track.git
 
 2. Перейдіть до директорії проекту:
 cd project-tow-truck
