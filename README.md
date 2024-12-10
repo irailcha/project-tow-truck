@@ -15,23 +15,7 @@ https://evakuator24.dp.ua/
 - **Cloudinary** — хмарне сховище для зберігання та обробки фото відгуків.
 
 ## Структура проекту
-├── dist                    # Зібрані файли для продакшену
-├── node_modules            # Залежності проекту
-├── src                     # Джерельні файли
-│   ├── components          # Компоненти React
-│   ├── images              # Зображення для проекту
-│   ├── pages               # Сторінки додатку
-│   ├── styles              # Глобальні стилі
-│   ├── index.js            # Основний файл додатку
-│   ├── index.html          # Основний HTML-файл додатку
-│   ├── reviews.json        # Список відгуків
-├── .gitignore              # Файл для ігнорування файлів у Git
-├── babelrc                 # Конфігурація Babel
-├── webpack.config.js       # Налаштування webpack
-├── package.json            # Файл конфігурації npm
-├── package-lock.json       # Файл з точними версіями залежностей
-└── README.md               # Опис проекту
-
+![image](https://github.com/user-attachments/assets/1f3d2582-265e-440a-ab1c-072997e49c84)
 
 ## Домен
 
@@ -42,10 +26,10 @@ https://evakuator24.dp.ua/
 
 1. Клонуйте репозиторій:
    ```bash
-   git clone <URL вашого репозиторію>
+   git clone https://github.com/irailcha/project-tow-truck.git
 
 2. Перейдіть до директорії проекту:
-cd назва_вашого_проекту
+cd project-tow-truck
 
 3. Встановіть залежності:
 npm install
