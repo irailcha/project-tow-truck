@@ -33,7 +33,7 @@ const HeaderContactsComponent=()=>{
     </li>
     <li>
     <HeaderLink 
-            href="href=https://t.me/alegha_01" 
+            href="https://t.me/alegha_01" 
             aria-label="Зв'язатися через Telegram"
             target="_blank" rel="noopener noreferrer"
           >
