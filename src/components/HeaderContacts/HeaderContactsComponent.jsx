@@ -39,7 +39,7 @@ const HeaderContactsComponent=()=>{
           >
         <FaTelegram />
       </HeaderLink>
-    </li>
+    </li> 
     <li>
     <HeaderLink 
             href="viber://chat?number=%2B380663614503" 
