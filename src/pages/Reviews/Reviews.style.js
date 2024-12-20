@@ -14,7 +14,7 @@ export const StyleCard = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 450px;
+  height: 437px;
   width: 250px;
   background: ${({ theme }) => theme.colors.secondary};
   border: 2px solid ${({ theme }) => theme.colors.primary};
@@ -28,4 +28,3 @@ export const StyleCard = styled.div`
   }
 
 `;
-

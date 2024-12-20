@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Foto_1",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734682160/foto4_350_jpg_hgm7t0.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Foto_2",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734682160/foto3_350_jpg_bwvely.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Foto_3",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734682160/foto2_350_jpg_yxochk.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Foto_4",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734682159/foto1_350_jpg_jvymwq.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Foto_5",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734682122/photo_2_pjl1ts.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Foto_6",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734682122/photo_1_jhhgqn.jpg"
+  }
+
+]

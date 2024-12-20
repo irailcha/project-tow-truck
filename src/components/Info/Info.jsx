@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -6,16 +6,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Info.style';
 import { ImageThumb, InfoSection, InfoEvacuator, InfoButton } from './Info.style';
-import foto_1 from '../../images/foto1_350_jpg.jpg';
-import foto_2 from '../../images/foto2_350_jpg.jpg';
-import foto_3 from '../../images/foto3_350_jpg.jpg';
-import foto_4 from '../../images/foto4_350_jpg.jpg';
-import foto_1_webp from '../../images/foto1_350_webp.webp';
-import foto_2_webp from '../../images/foto2_350_webp.webp';
-import foto_3_webp from '../../images/foto3_350_webp.webp';
-import foto_4_webp from '../../images/foto4_350_webp.webp';
+import imagesData from '../../../public/images.json'
 
 const Info = () => {
+  const [images]=useState(imagesData)
   return (
     <div className="container">
       <InfoSection>
@@ -33,34 +27,15 @@ const Info = () => {
             modules={[Autoplay, Pagination]}
             className="mySwiper"
           >
-            <SwiperSlide>
-              <picture>
-                <source srcSet={foto_1_webp} type="image/webp" />
-                <source srcSet={foto_1} type="image/jpeg" />
-                <img src={foto_1} alt="Евакуатор фото 1" width="350" height="320" loading="lazy" />
-              </picture>
-            </SwiperSlide>
-            <SwiperSlide>
-              <picture>
-                <source srcSet={foto_2_webp} type="image/webp" />
-                <source srcSet={foto_2} type="image/jpeg" />
-                <img src={foto_2} alt="Евакуатор фото 2" width="350" height="320" loading="lazy" />
-              </picture>
-            </SwiperSlide>
-            <SwiperSlide>
-              <picture>
-                <source srcSet={foto_3_webp} type="image/webp" />
-                <source srcSet={foto_3} type="image/jpeg" />
-                <img src={foto_3} alt="Евакуатор фото 3" width="350" height="320" loading="lazy" />
-              </picture>
-            </SwiperSlide>
-            <SwiperSlide>
-              <picture>
-                <source srcSet={foto_4_webp} type="image/webp" />
-                <source srcSet={foto_4} type="image/jpeg" />
-                <img src={foto_4} alt="Евакуатор фото 4" width="350" height="320" loading="lazy" />
-              </picture>
-            </SwiperSlide>
+            <ul>{images.map(({id, title, image})=>(<SwiperSlide key={id}>
+              <img
+                src={image}
+                alt={title.alt}
+                loading="lazy"
+                maxWidth={350}
+              />
+              </SwiperSlide> ))}</ul>
+
           </Swiper>
         </ImageThumb>
         <InfoEvacuator>

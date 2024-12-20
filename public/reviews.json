@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Amazing service!",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734531558/rewiew_1_r3n31u.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Highly recommend!",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734531557/review_2_tlmck3.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Highly recommend!",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734531557/review_3_zjegte.jpg"
+
+  },
+  {
+    "id": 4,
+    "title": "Amazing service!",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734531557/review_4_ajljga.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Highly recommend!",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734531557/review_5_kdyj1f.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Highly recommend!",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734531556/review_6_hpcmlq.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Highly recommend!",
+    "image": "https://res.cloudinary.com/irailcha/image/upload/v1734531556/review_7_spzzwk.jpg"
+  }
+]
