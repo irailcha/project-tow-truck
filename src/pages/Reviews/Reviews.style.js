@@ -9,7 +9,7 @@ export const ReviewsList = styled.ul`
   justify-content: center; 
 `;
 
-export const StyleCard = styled.div`
+export const StyleCard = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;

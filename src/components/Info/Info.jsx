@@ -31,6 +31,7 @@ const Info = () => {
               <img
                 src={image}
                 alt={title.alt}
+                aria-label={title.alt}
                 loading="lazy"
                 maxWidth={350}
               />

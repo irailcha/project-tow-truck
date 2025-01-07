@@ -66,6 +66,7 @@ const Reviews = () => {
                 <img
                   src={getImageUrl(review.image, isMobile ? 250: 300)} 
                   alt={review.title}
+                  aria-label={review.title}
                   loading="lazy"
                 />
               </a>
